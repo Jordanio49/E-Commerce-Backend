@@ -50,6 +50,11 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new tag
+  /* req.body example
+    {
+      "tag_name": "orange"
+    }
+  */
   Tag.create({
     tag_name: req.body.tag_name
   })
